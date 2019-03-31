@@ -787,7 +787,7 @@ var fillmygen2 = function(result){
 	//a.push(curjoin);
 	a.push(web3.utils.fromWei(BN(result[9]).toFixed(), 'ether'));
 	refreshIncomeTimer(a[0]);
-	$(".pext-incomeper").html(BN(a[1]).toFixed(6, 1) + " ~ " + BN(a[9]).toFixed(6, 1));
+	$(".pext-incomeper").html(BN(a[1]).toFixed(3, 1) + " ~ " + BN(a[9]).toFixed(3, 1));
 	$(".pext-incometimes").html(BN(a[2]).div(10).toFixed(1, 1));	
 	$(".pext-incomecan").html(BN(a[4]).toFixed(6, 1));
 	
